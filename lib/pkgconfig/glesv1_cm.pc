@@ -1,0 +1,9 @@
+prefix=${pcfiledir}/../../..
+includedir=${prefix}/include
+libdir=${prefix}/lib/x64
+
+Name: glesv1_cm
+Description: Mesa OpenGL ES 1.1 CM library
+Version: 25.0.2
+Libs: -L${libdir} -lGLESv1_CM
+Cflags: -I${includedir}
