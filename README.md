@@ -7,3 +7,32 @@
 Задачи по заданию (любой бактрекер или текстовый файл)
 Репозиторий гит,
 Код.
+
+## Возможности
+- Отображение 4-х примитивов (квадрат, треугольник, точка, отрезок)
+- Динамическое изменение цвета (`клавиша G`)
+- Консольное меню, управление клавишами
+
+## Поддерживаемые ОС
+- Windows
+- Linux
+
+## Какие библиотеки скачать и как настроить компилятор
+- Windows
+    - GLEW, GLFW, GLM, OpenGL ES, MesaOpenGL (для таких библиотек как libGLESv2.lib, libEGL.dll)
+    - Visual Studio - указать в настройках проекта пути к библиотекам (glf, glm, mesaopengl)
+- Linux
+    - Проверить базовые инструменты (при необходимости установить)
+    g++ --version
+    make --version
+    - Библиотеки
+    sudo apt update
+    sudo apt install -y libglfw3-dev libgles2-mesa-dev
+    sudo apt install -y libglm-dev libxinerama-dev libxcursor-dev
+    - Сборка
+    g++ -std=c++11 -I/usr/include main.cpp shaders_loader.cpp \
+    -o opengl_es_emulator \
+    -lglfw -lGLESv2 -ldl -lpthread -lX11 -lXrandr
+    - Запуск
+    ./opengl_es_emulator
+
