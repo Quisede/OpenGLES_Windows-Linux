@@ -20,6 +20,10 @@
 ## Какие библиотеки скачать и как настроить компилятор
 - Windows
     - GLEW, GLFW, GLM, OpenGL ES, MesaOpenGL (для таких библиотек как libGLESv2.lib, libEGL.dll)
+        - https://glew.sourceforge.net/index.html
+        - https://www.glfw.org
+        - https://registry.khronos.org/OpenGL/index_es.php
+        - https://github.com/pal1000/mesa-dist-win?ysclid=m92fjuam2x15805089
     - Visual Studio - указать в настройках проекта пути к библиотекам (glf, glm, mesaopengl)
 - Linux
     - Проверить базовые инструменты (при необходимости установить)
